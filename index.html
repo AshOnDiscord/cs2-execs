@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="darkreader-lock">
+<title>CS2 Exec Book</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Offline reference book for CS2 map executes and utility lineups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-top">
+    <div class="brand">
+      <span class="brand-mark">EXEC<span>·</span>BOOK</span>
+      <span class="brand-sub">CS2 lineup reference</span>
+    </div>
+    <div class="header-spacer"></div>
+    <div class="crumb" id="crumb"></div>
+  </div>
+  <nav class="map-tabs" id="mapTabs" aria-label="Select map"></nav>
+</header>
+
+<div class="layout">
+  <aside class="exec-sidebar" id="execList" aria-label="Select exec"></aside>
+  <main class="content" id="content"></main>
+</div>
+
+<div class="hover-popover" id="hoverPopover" aria-hidden="true">
+  <img id="hoverPopoverImg" alt="">
+  <span class="hover-popover-tag" id="hoverPopoverTag"></span>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
